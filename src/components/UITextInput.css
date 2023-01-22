@@ -3,6 +3,7 @@
   flex-direction: column;
   padding: 5px 20px;
   margin: 10px 0;
+  width: 100%;
 }
 
 .text-input-emoji {
@@ -10,7 +11,7 @@
 }
 
 .text-input-label {
-  font-size: 18px;
+  font-size: 14px;
   color: #e94560;
   text-transform: uppercase;
   font-family: "Cousine", monospace;
@@ -21,12 +22,13 @@
   border: none;
   outline: none;
   padding: 10px;
-  background-color: #423f3e;
+  background-color: #161616;
   color: #fff;
-  font-size: 15px;
+  font-size: 14px;
   margin-top: 15px;
   border-radius: 5px;
   resize: none;
+  width: 100%;
 }
 
 .text-input:focus-visible {

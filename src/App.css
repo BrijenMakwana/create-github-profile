@@ -1,0 +1,17 @@
+.App {
+  overflow: hidden;
+  max-height: 100vh;
+  display: flex;
+  flex-direction: row;
+}
+
+.editing-container,
+.preview-container {
+  width: 50vw;
+  height: 100vh;
+}
+
+.editing-component {
+  overflow-y: scroll;
+  height: 100vh;
+}
