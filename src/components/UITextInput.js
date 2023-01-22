@@ -13,7 +13,7 @@ export default function UITextInput(props) {
   return (
     <div className="text-input-container">
       <label className="text-input-label">
-        <sapn className="text-input-emoji">{emoji}</sapn>
+        <span className="text-input-emoji">{emoji}</span>
         {inputLabel}:
       </label>
       {isTextArea ? (
