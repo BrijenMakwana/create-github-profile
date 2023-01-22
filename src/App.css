@@ -4,14 +4,27 @@
   display: flex;
   flex-direction: row;
 }
-
 .editing-container,
 .preview-container {
   width: 50vw;
   height: 100vh;
 }
 
+.preview-container {
+  background-color: #161616;
+}
+
 .editing-component {
   overflow-y: scroll;
   height: 100vh;
+  border-top: 0.1px solid #423f3e;
+}
+
+.section-toggle-btns {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 30px;
+  margin-bottom: 30px;
 }

@@ -1,0 +1,16 @@
+.section-header-container {
+  padding: 30px;
+}
+
+.section-heading {
+  text-transform: capitalize;
+  font-size: 22px;
+  font-weight: 700;
+  font-family: "Cousine", monospace;
+}
+
+.section-description {
+  font-size: 17px;
+  font-weight: 400;
+  margin-top: 10px;
+}
