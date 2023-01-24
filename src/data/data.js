@@ -1,3 +1,6 @@
+import Introduction from "../components/Introduction";
+import Skills from "../components/Skills";
+
 const sectionData = [
   {
     heading: "Introduction",
@@ -23,4 +26,6 @@ const sectionData = [
   },
 ];
 
-export { sectionData };
+const editingComponents = [<Introduction />, <Skills />, "", "", ""];
+
+export { sectionData, editingComponents };

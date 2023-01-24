@@ -1,0 +1,32 @@
+.skill-container {
+  background-color: #161616;
+  padding: 20px;
+  margin: 20px 0;
+  border-radius: 5px;
+}
+
+.skill-emoji {
+  margin-right: 10px;
+}
+
+.skill-type {
+  font-size: 14px;
+  text-transform: uppercase;
+  font-family: "Cousine", monospace;
+  font-weight: 600;
+}
+
+.icons-container {
+  margin-top: 10px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.icon-image {
+  width: 40px;
+  height: 40px;
+  margin: 10px 5px;
+  cursor: pointer;
+}

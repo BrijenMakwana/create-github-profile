@@ -16,7 +16,8 @@
 
 .editing-component {
   overflow-y: scroll;
-  height: 100vh;
+  overflow-x: hidden;
+  height: 80vh;
   border-top: 0.1px solid #423f3e;
 }
 
