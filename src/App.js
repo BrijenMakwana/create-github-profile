@@ -1,9 +1,8 @@
 import { useState } from "react";
 import "./App.css";
-import Introduction from "./components/Introduction";
 import SectionHeader from "./components/SectionHeader";
 import UIButton from "./components/UIButton";
-import { sectionData } from "./data/data";
+import { sectionData, editingComponents } from "./data/data";
 
 function App() {
   const [sectionIndex, setSectionIndex] = useState(0);
@@ -40,7 +39,7 @@ function App() {
           />
         </div>
         <div className="editing-component">
-          <Introduction />
+          {editingComponents[sectionIndex]}
         </div>
       </div>
       <div className="preview-container"></div>
