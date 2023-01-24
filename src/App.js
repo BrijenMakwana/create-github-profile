@@ -26,6 +26,7 @@ function App() {
           heading={sectionData[sectionIndex].heading}
           description={sectionData[sectionIndex].description}
         />
+        {/* section toggle buttons */}
         <div className="section-toggle-btns">
           <UIButton
             text="previous section"
@@ -40,6 +41,19 @@ function App() {
         </div>
         <div className="editing-component">
           {editingComponents[sectionIndex]}
+          {/* section toggle buttons */}
+          <div className="section-toggle-btns">
+            <UIButton
+              text="previous section"
+              btnAction={previousSection}
+              shouldVisible={sectionIndex > 0}
+            />
+            <UIButton
+              text="next section"
+              btnAction={nextSection}
+              shouldVisible={sectionIndex < sectionData.length - 1}
+            />
+          </div>
         </div>
       </div>
       <div className="preview-container"></div>
