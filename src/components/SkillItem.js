@@ -13,11 +13,9 @@ export default function SkillItem(props) {
       {/* icons */}
       <div className="icons-container">
         {icons.map((icon) => (
-          <img
-            src="https://raw.githubusercontent.com/BrijenMakwana/create-github-profile/skills/src/assets/skills/aave-colored.svg"
-            alt="ex"
-            className="icon-image"
-          />
+          <a href={icon.link} key={icon.name} target="blank" title={icon.name}>
+            <img src={icon.path} alt={icon.name} className="icon-image" />
+          </a>
         ))}
       </div>
     </div>
