@@ -17,17 +17,13 @@ const sectionData = [
     description: "Connect with your visitors by adding links to your socials.",
   },
   {
-    heading: "Badges",
-    description: "Add some badges and stats to your profile.",
-  },
-  {
     heading: "Support",
     description:
       "Make it easy for people using your products to support you or give donations.",
   },
 ];
 
-const editingComponents = [<Introduction />, <Skills />, <Socials />, "", ""];
+const editingComponents = [<Introduction />, <Skills />, <Socials />, ""];
 
 // skills icons
 const skillsIconData = {
