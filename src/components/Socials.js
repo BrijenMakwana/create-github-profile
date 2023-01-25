@@ -1,100 +1,96 @@
 import React from "react";
 import "./Socials.css";
-import UITextInput from "./UITextInput";
+import UILinkInput from "./UILinkInput";
 
 export default function Socials() {
   return (
     <div className="socials-container">
-      <UITextInput
-        inputLabel="GITHUB PROFILE"
-        emoji="👋🏻"
-        inputPlaceholder="https://github.com"
+      <UILinkInput
+        linkLabel="GITHUB"
+        icon="github-dark"
+        startLink="https://github.com"
       />
-      <UITextInput
-        inputLabel="TWITTER PROFILE"
-        emoji="👋🏻"
-        inputPlaceholder="https://github.com"
+      <UILinkInput
+        linkLabel="TWITTER"
+        icon="twitter"
+        startLink="https://github.com"
       />
-      <UITextInput
-        inputLabel="HASHNODE PROFILE"
-        emoji="👋🏻"
-        inputPlaceholder="https://github.com"
+      <UILinkInput
+        linkLabel="HASHNODE "
+        icon="hashnode"
+        startLink="https://github.com"
       />
-      <UITextInput
-        inputLabel="MEDIUM PROFILE"
-        emoji="👋🏻"
-        inputPlaceholder="https://github.com"
+      <UILinkInput
+        linkLabel="MEDIUM "
+        icon="medium-dark"
+        startLink="https://github.com"
       />
-      <UITextInput
-        inputLabel="DEV.TO PROFILE"
-        emoji="👋🏻"
-        inputPlaceholder="https://github.com"
+      <UILinkInput
+        linkLabel="DEV.TO "
+        icon="devdotto-dark"
+        startLink="https://github.com"
       />
-      <UITextInput
-        inputLabel="LINKEDIN PROFILE"
-        emoji="👋🏻"
-        inputPlaceholder="https://github.com"
+      <UILinkInput
+        linkLabel="LINKEDIN "
+        icon="linkedin"
+        startLink="https://github.com"
       />
-      <UITextInput
-        inputLabel="POLYWORK PROFILE"
-        emoji="👋🏻"
-        inputPlaceholder="https://github.com"
+      <UILinkInput
+        linkLabel="POLYWORK "
+        icon="polywork"
+        startLink="https://github.com"
       />
-      <UITextInput
-        inputLabel="TWITCH PROFILE"
-        emoji="👋🏻"
-        inputPlaceholder="https://github.com"
+      <UILinkInput
+        linkLabel="TWITCH "
+        icon="twitch"
+        startLink="https://github.com"
       />
-      <UITextInput
-        inputLabel="YOUTUBE PROFILE"
-        emoji="👋🏻"
-        inputPlaceholder="https://github.com"
+      <UILinkInput
+        linkLabel="YOUTUBE "
+        icon="youtube"
+        startLink="https://github.com"
       />
-      <UITextInput
-        inputLabel="DISCORD PROFILE"
-        emoji="👋🏻"
-        inputPlaceholder="https://github.com"
+      <UILinkInput
+        linkLabel="DISCORD "
+        icon="discord"
+        startLink="https://github.com"
       />
-      <UITextInput
-        inputLabel="INSTAGRAM PROFILE"
-        emoji="👋🏻"
-        inputPlaceholder="https://github.com"
+      <UILinkInput
+        linkLabel="INSTAGRAM "
+        icon="instagram"
+        startLink="https://github.com"
       />
-      <UITextInput
-        inputLabel="FACEBOOK PROFILE"
-        emoji="👋🏻"
-        inputPlaceholder="https://github.com"
+      <UILinkInput
+        linkLabel="FACEBOOK "
+        icon="facebook"
+        startLink="https://github.com"
       />
-      <UITextInput
-        inputLabel="DRIBBBLE PROFILE"
-        emoji="👋🏻"
-        inputPlaceholder="https://github.com"
+      <UILinkInput
+        linkLabel="DRIBBBLE "
+        icon="dribbble"
+        startLink="https://github.com"
       />
-      <UITextInput
-        inputLabel="BEHANCE PROFILE"
-        emoji="👋🏻"
-        inputPlaceholder="https://github.com"
+      <UILinkInput
+        linkLabel="BEHANCE "
+        icon="behance"
+        startLink="https://github.com"
       />
-      <UITextInput
-        inputLabel="CODESANDBOX PROFILE"
-        emoji="👋🏻"
-        inputPlaceholder="https://github.com"
+      <UILinkInput
+        linkLabel="CODESANDBOX "
+        icon="codesandbox-dark"
+        startLink="https://github.com"
       />
-      <UITextInput
-        inputLabel="CODEPEN PROFILE"
-        emoji="👋🏻"
-        inputPlaceholder="https://github.com"
+      <UILinkInput
+        linkLabel="CODEPEN "
+        icon="codepen-dark"
+        startLink="https://github.com"
       />
-      <UITextInput
-        inputLabel="STACKOVERFLOW PROFILE"
-        emoji="👋🏻"
-        inputPlaceholder="https://github.com"
+      <UILinkInput
+        linkLabel="STACKOVERFLOW "
+        icon="stackoverflow"
+        startLink="https://github.com"
       />
-      <UITextInput
-        inputLabel="RSS PROFILE"
-        emoji="👋🏻"
-        inputPlaceholder="https://github.com"
-      />
+      <UILinkInput linkLabel="RSS " icon="rss" startLink="https://github.com" />
     </div>
   );
 }

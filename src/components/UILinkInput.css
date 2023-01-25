@@ -1,0 +1,56 @@
+.link-input-container {
+  display: flex;
+  flex-direction: column;
+  padding: 5px 10px;
+  margin: 10px 0;
+  width: 100%;
+}
+
+.link-input-label-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.link-input-icon {
+  margin-right: 10px;
+  width: 20px;
+  height: 20px;
+}
+
+.link-input-label {
+  font-size: 14px;
+  color: #e94560;
+  text-transform: uppercase;
+  font-family: "Cousine", monospace;
+  font-weight: 600;
+}
+
+.link-text-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 10px;
+  background-color: #161616;
+  margin-top: 15px;
+  border-radius: 5px;
+}
+
+.link-start {
+  color: #fff;
+  font-size: 14px;
+}
+
+.link-text-input {
+  border: none;
+  outline: none;
+  background-color: transparent;
+  color: #fff;
+  font-size: 14px;
+  resize: none;
+  width: 100%;
+}
+
+.text-input:focus-visible {
+  outline: 1px solid #fff;
+}
