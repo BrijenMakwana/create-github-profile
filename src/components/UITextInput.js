@@ -1,5 +1,6 @@
 import React from "react";
 import "./UITextInput.css";
+import { colorScheme } from "../color/color";
 
 export default function UITextInput(props) {
   const {
@@ -12,7 +13,10 @@ export default function UITextInput(props) {
 
   return (
     <div className="text-input-container">
-      <label className="text-input-label">
+      <label
+        className="text-input-label"
+        style={{ color: colorScheme["dark"].primary }}
+      >
         <span className="text-input-emoji">{emoji}</span>
         {inputLabel}:
       </label>

@@ -11,11 +11,11 @@
 }
 
 .btn-container:hover {
-  background-color: #161616;
+  background-color: #fff;
 }
 
 .btn-container:hover .btn-text {
-  color: #e94560;
+  color: #000;
 }
 
 .btn-text {
