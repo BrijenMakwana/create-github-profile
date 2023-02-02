@@ -14,7 +14,12 @@ export default function SkillItem(props) {
       {/* icons */}
       <div className="icons-container">
         {icons.map((icon) => (
-          <SkillIcon icon={icon} setAction={setAction} restData={icons} />
+          <SkillIcon
+            icon={icon}
+            setAction={setAction}
+            restData={icons}
+            key={icon.iTag}
+          />
         ))}
       </div>
     </div>

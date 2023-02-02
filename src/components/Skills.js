@@ -22,7 +22,7 @@ export default function Skills() {
     <div className="skills-container">
       <SkillItem type="core" icons={core} setAction={setCore} />
       <SkillItem type="fronted" icons={frontend} setAction={setFrontend} />
-      <SkillItem type="baackend" icons={backend} setAction={setBackend} />
+      <SkillItem type="backend" icons={backend} setAction={setBackend} />
       <SkillItem type="other" icons={other} setAction={setOther} />
       <SkillItem type="software" icons={software} setAction={setSoftware} />
       <SkillItem type="web3" icons={web3} setAction={setWeb3} />
