@@ -9,6 +9,10 @@ export default function UITextInput(props) {
     inputPlaceholder,
     isTextArea = false,
     isLinkAvailable = false,
+    inputAction,
+    inputValue,
+    linkAction = undefined,
+    linkValue = undefined,
   } = props;
 
   return (
@@ -25,16 +29,26 @@ export default function UITextInput(props) {
           placeholder={inputPlaceholder}
           className="text-input"
           rows={2}
+          onChange={(e) => inputAction(e.target.value)}
+          value={inputValue}
         />
       ) : (
         <input
           type="text"
           placeholder={inputPlaceholder}
           className="text-input"
+          onChange={(e) => inputAction(e.target.value)}
+          value={inputValue}
         />
       )}
       {isLinkAvailable && (
-        <input type="text" className="text-input" placeholder="http://" />
+        <input
+          type="text"
+          className="text-input"
+          placeholder="http://"
+          onChange={(e) => linkAction(e.target.value)}
+          value={linkValue}
+        />
       )}
     </div>
   );

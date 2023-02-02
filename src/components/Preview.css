@@ -1,0 +1,37 @@
+.preview-wrapper {
+  width: 100%;
+  padding: 20px;
+}
+
+.preview-name {
+  font-size: 35px;
+  color: #fff;
+}
+
+.preview-subtitle {
+  font-size: 25px;
+  margin-top: 10px;
+  color: #fff;
+}
+
+.preview-description {
+  font-size: 16px;
+  margin-top: 10px;
+  color: #b8b8b8;
+}
+
+ul.preview-ul {
+  list-style-type: square;
+  margin-top: 10px;
+  padding-left: 20px;
+}
+
+li.preview-li {
+  margin-top: 2px;
+  color: #b8b8b8;
+}
+
+a.preview-link {
+  margin-left: 5px;
+  color: #e94560;
+}
