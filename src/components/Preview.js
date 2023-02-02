@@ -55,7 +55,7 @@ export default function Preview() {
         {/* working on */}
         {workingName && workingLink && (
           <li className="preview-li">
-            🚀 &nbsp; See my portfolio at
+            🚀 &nbsp; I'm currently working on
             <a href={workingLink} className="preview-link" target="blank">
               {workingName}
             </a>
