@@ -1,0 +1,15 @@
+.skill-icon-container {
+  margin: 10px 10px 0 0;
+  border-radius: 100%;
+  padding: 8px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.icon-image {
+  width: 35px;
+  height: 35px;
+}

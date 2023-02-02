@@ -23,12 +23,3 @@
   align-items: center;
   flex-wrap: wrap;
 }
-
-.icons-container a {
-  margin: 10px 10px 0 0;
-}
-
-.icon-image {
-  width: 40px;
-  height: 40px;
-}

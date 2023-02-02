@@ -3,12 +3,13 @@ import "./App.css";
 import Preview from "./components/Preview";
 import SectionHeader from "./components/SectionHeader";
 import UIButton from "./components/UIButton";
-import { sectionData, editingComponents } from "./data/data";
+import { sectionData, editingComponents, skillsIconData } from "./data/data";
 
 export const ProfileContext = createContext(null);
 
 function App() {
   const [sectionIndex, setSectionIndex] = useState(0);
+  // introduction states
   const [name, setName] = useState("");
   const [subtitle, setSubtitle] = useState("");
   const [description, setDescription] = useState("");
@@ -21,6 +22,14 @@ function App() {
   const [learning, setLearning] = useState("");
   const [collaborate, setCollaborate] = useState("");
   const [anything, setAnything] = useState("");
+
+  // skills states
+  const [core, setCore] = useState(skillsIconData.core);
+  const [frontend, setFrontend] = useState(skillsIconData.frontend);
+  const [backend, setBackend] = useState(skillsIconData.backend);
+  const [other, setOther] = useState(skillsIconData.other);
+  const [software, setSoftware] = useState(skillsIconData.software);
+  const [web3, setWeb3] = useState(skillsIconData.web3);
 
   const nextSection = () => {
     if (sectionIndex < sectionData.length - 1) {
@@ -61,6 +70,18 @@ function App() {
         setCollaborate,
         anything,
         setAnything,
+        core,
+        setCore,
+        frontend,
+        setFrontend,
+        backend,
+        setBackend,
+        other,
+        setOther,
+        software,
+        setSoftware,
+        web3,
+        setWeb3,
       }}
     >
       <div className="App">

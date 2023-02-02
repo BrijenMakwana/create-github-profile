@@ -35,3 +35,20 @@ a.preview-link {
   margin-left: 5px;
   color: #e94560;
 }
+
+.preview-skills-heading {
+  font-size: 25px;
+  margin-top: 10px;
+  color: #fff;
+  text-transform: capitalize;
+}
+
+.preview-skills-container {
+  margin-top: 10px;
+}
+
+.preview-icon-image {
+  width: 35px;
+  height: 35px;
+  margin: 10px 10px 0 0;
+}

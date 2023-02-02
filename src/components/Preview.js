@@ -2,6 +2,24 @@ import React, { useContext } from "react";
 import "./Preview.css";
 import { ProfileContext } from "../App";
 
+const SkillIconsList = (props) => {
+  const { icons } = props;
+  return (
+    <>
+      {icons
+        .filter((item) => item.isSelected)
+        .map((skill) => (
+          <img
+            src={skill.path}
+            alt={skill.name}
+            className="preview-icon-image"
+            key={skill.iTag}
+          />
+        ))}
+    </>
+  );
+};
+
 export default function Preview() {
   const {
     name,
@@ -16,9 +34,16 @@ export default function Preview() {
     learning,
     collaborate,
     anything,
+    core,
+    frontend,
+    backend,
+    other,
+    software,
+    web3,
   } = useContext(ProfileContext);
   return (
     <div className="preview-wrapper">
+      {/* introduction */}
       {/* user name */}
       {name && <h1 className="preview-name">Hi My name is {name}</h1>}
 
@@ -55,7 +80,7 @@ export default function Preview() {
         {/* working on */}
         {workingName && workingLink && (
           <li className="preview-li">
-            🚀 &nbsp; See my portfolio at
+            🚀 &nbsp; I'm currently working on
             <a href={workingLink} className="preview-link" target="blank">
               {workingName}
             </a>
@@ -74,6 +99,17 @@ export default function Preview() {
         {/* anything else */}
         {anything && <li className="preview-li">⚡ &nbsp; {anything}</li>}
       </ul>
+
+      {/* skills */}
+      <h3 className="preview-skills-heading">skills</h3>
+      <div className="preview-skills-container">
+        <SkillIconsList icons={core} />
+        <SkillIconsList icons={frontend} />
+        <SkillIconsList icons={backend} />
+        <SkillIconsList icons={other} />
+        <SkillIconsList icons={software} />
+        <SkillIconsList icons={web3} />
+      </div>
     </div>
   );
 }
