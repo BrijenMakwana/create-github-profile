@@ -153,11 +153,15 @@ export default function Socials() {
         linkLabel="CODEPEN "
         icon="codepen-dark"
         startLink="https://github.com"
+        linkValue={codepenLink}
+        linkAction={setCodepenLink}
       />
       <UILinkInput
         linkLabel="STACKOVERFLOW "
         icon="stackoverflow"
         startLink="https://github.com"
+        linkValue={stackoverflowLink}
+        linkAction={setStackoverflowLink}
       />
       <UILinkInput
         linkLabel="RSS "
