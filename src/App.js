@@ -31,6 +31,26 @@ function App() {
   const [software, setSoftware] = useState(skillsIconData.software);
   const [web3, setWeb3] = useState(skillsIconData.web3);
 
+  // socials states
+  const [githubLink, setGithubLink] = useState("");
+  const [twitterLink, setTwitterLink] = useState("");
+  const [hashnodeLink, setHashnodeLink] = useState("");
+  const [mediumLink, setMediumLink] = useState("");
+  const [devtoLink, setDevtoLink] = useState("");
+  const [linkedinLink, setLinkedinLink] = useState("");
+  const [polyworkLink, setPolyworkLink] = useState("");
+  const [twitchLink, setTwitchLink] = useState("");
+  const [youtubeLink, setYoutubeLink] = useState("");
+  const [discordLink, setDiscordLink] = useState("");
+  const [instagramLink, setInstagramLink] = useState("");
+  const [facebookLink, setFacebookLink] = useState("");
+  const [dribbleLink, setDribbleLink] = useState("");
+  const [behanceLink, setBehanceLink] = useState("");
+  const [codesandboxLink, setCodesandboxLink] = useState("");
+  const [codepenLink, setCodepenLink] = useState("");
+  const [stackoverflowLink, setStackoverflowLink] = useState("");
+  const [rssLink, setRssLink] = useState("");
+
   const nextSection = () => {
     if (sectionIndex < sectionData.length - 1) {
       setSectionIndex((prev) => prev + 1);
@@ -82,6 +102,42 @@ function App() {
         setSoftware,
         web3,
         setWeb3,
+        githubLink,
+        setGithubLink,
+        twitterLink,
+        setTwitterLink,
+        hashnodeLink,
+        setHashnodeLink,
+        mediumLink,
+        setMediumLink,
+        devtoLink,
+        setDevtoLink,
+        linkedinLink,
+        setLinkedinLink,
+        polyworkLink,
+        setPolyworkLink,
+        twitchLink,
+        setTwitchLink,
+        youtubeLink,
+        setYoutubeLink,
+        discordLink,
+        setDiscordLink,
+        instagramLink,
+        setInstagramLink,
+        facebookLink,
+        setFacebookLink,
+        dribbleLink,
+        setDribbleLink,
+        behanceLink,
+        setBehanceLink,
+        codesandboxLink,
+        setCodesandboxLink,
+        codepenLink,
+        setCodepenLink,
+        stackoverflowLink,
+        setStackoverflowLink,
+        rssLink,
+        setRssLink,
       }}
     >
       <div className="App">
