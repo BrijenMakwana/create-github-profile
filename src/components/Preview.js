@@ -20,6 +20,21 @@ const SkillIconsList = (props) => {
   );
 };
 
+const SocialLink = (props) => {
+  const { linkValue, iconName, link } = props;
+  if (!linkValue) return null;
+
+  return (
+    <a href={link} target="blank" className="preview-social-link">
+      <img
+        src={`https://raw.githubusercontent.com/BrijenMakwana/create-github-profile/main/public/assets/Icons/socials/${iconName}.svg`}
+        alt={iconName}
+        className="preview-social-icon"
+      />
+    </a>
+  );
+};
+
 export default function Preview() {
   const {
     name,
@@ -40,6 +55,24 @@ export default function Preview() {
     other,
     software,
     web3,
+    githubLink,
+    twitterLink,
+    hashnodeLink,
+    mediumLink,
+    devtoLink,
+    linkedinLink,
+    polyworkLink,
+    twitchLink,
+    youtubeLink,
+    discordLink,
+    instagramLink,
+    facebookLink,
+    dribbleLink,
+    behanceLink,
+    codesandboxLink,
+    codepenLink,
+    stackoverflowLink,
+    rssLink,
   } = useContext(ProfileContext);
   return (
     <div className="preview-wrapper">
@@ -119,6 +152,119 @@ export default function Preview() {
           </div>
         </>
       )}
+
+      {/* socials */}
+      {(githubLink ||
+        twitterLink ||
+        hashnodeLink ||
+        mediumLink ||
+        devtoLink ||
+        linkedinLink ||
+        polyworkLink ||
+        twitchLink ||
+        youtubeLink ||
+        discordLink ||
+        instagramLink ||
+        facebookLink ||
+        dribbleLink ||
+        behanceLink ||
+        codesandboxLink ||
+        codepenLink ||
+        stackoverflowLink ||
+        rssLink) && <h3 className="preview-socials-heading">socials</h3>}
+
+      <div className="preview-socials-container">
+        <SocialLink
+          linkValue={githubLink}
+          iconName="github-dark"
+          link={`https://github.com/${githubLink}`}
+        />
+        <SocialLink
+          linkValue={twitterLink}
+          iconName="twitter"
+          link={`https://twitter.com/${twitterLink}`}
+        />
+        <SocialLink
+          linkValue={hashnodeLink}
+          iconName="hashnode"
+          link={`http://hashnode.com/${hashnodeLink}`}
+        />
+        <SocialLink
+          linkValue={mediumLink}
+          iconName="medium-dark"
+          link={`https://medium.com/${mediumLink}`}
+        />
+        <SocialLink
+          linkValue={devtoLink}
+          iconName="devdotto-dark"
+          link={`https://dev.to.com/${devtoLink}`}
+        />{" "}
+        <SocialLink
+          linkValue={linkedinLink}
+          iconName="linkedin"
+          link={`https://www.linkedin.com/in/${linkedinLink}`}
+        />{" "}
+        <SocialLink
+          linkValue={polyworkLink}
+          iconName="polywork"
+          link={`https://polywork.com/${polyworkLink}`}
+        />{" "}
+        <SocialLink
+          linkValue={twitchLink}
+          iconName="twitch"
+          link={`https://twitch.tv/${twitchLink}`}
+        />{" "}
+        <SocialLink
+          linkValue={youtubeLink}
+          iconName="youtube"
+          link={`https://www.youtube.com/c/${youtubeLink}`}
+        />
+        <SocialLink
+          linkValue={discordLink}
+          iconName="discord"
+          link={`https://discord.com/users/${discordLink}`}
+        />
+        <SocialLink
+          linkValue={instagramLink}
+          iconName="instagram"
+          link={`https://instagram.com/${instagramLink}`}
+        />
+        <SocialLink
+          linkValue={facebookLink}
+          iconName="facebook"
+          link={`https://facebook.com/${facebookLink}`}
+        />
+        <SocialLink
+          linkValue={dribbleLink}
+          iconName="dribbble"
+          link={`https://dribbble.com/${discordLink}`}
+        />
+        <SocialLink
+          linkValue={behanceLink}
+          iconName="behance"
+          link={`https://behance.com/${behanceLink}`}
+        />
+        <SocialLink
+          linkValue={codesandboxLink}
+          iconName="codesandbox-dark"
+          link={`https://codesandbox.io/u/${codesandboxLink}`}
+        />
+        <SocialLink
+          linkValue={codepenLink}
+          iconName="codepen-dark"
+          link={`https://codepen.io/${codepenLink}`}
+        />
+        <SocialLink
+          linkValue={stackoverflowLink}
+          iconName="stackoverflow"
+          link={`https://www.stackoverflow.com/users/${stackoverflowLink}`}
+        />
+        <SocialLink
+          linkValue={rssLink}
+          iconName="rss"
+          link={`https://${rssLink}`}
+        />
+      </div>
     </div>
   );
 }

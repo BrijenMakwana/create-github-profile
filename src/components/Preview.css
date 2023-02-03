@@ -36,19 +36,33 @@ a.preview-link {
   color: #e94560;
 }
 
-.preview-skills-heading {
+.preview-skills-heading,
+.preview-socials-heading {
   font-size: 25px;
-  margin-top: 10px;
+  margin-top: 20px;
   color: #fff;
   text-transform: capitalize;
 }
 
-.preview-skills-container {
-  margin-top: 10px;
+.preview-skills-container,
+.preview-socials-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  flex-wrap: wrap;
 }
 
 .preview-icon-image {
   width: 35px;
   height: 35px;
-  margin: 10px 10px 0 0;
+  margin: 20px 10px 0 0;
+}
+
+.preview-social-icon {
+  height: 38px;
+  width: 38px;
+}
+
+.preview-social-link {
+  margin: 20px 15px 0 0;
 }
