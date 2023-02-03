@@ -101,15 +101,24 @@ export default function Preview() {
       </ul>
 
       {/* skills */}
-      <h3 className="preview-skills-heading">skills</h3>
-      <div className="preview-skills-container">
-        <SkillIconsList icons={core} />
-        <SkillIconsList icons={frontend} />
-        <SkillIconsList icons={backend} />
-        <SkillIconsList icons={other} />
-        <SkillIconsList icons={software} />
-        <SkillIconsList icons={web3} />
-      </div>
+      {(core.some((item) => item.isSelected) ||
+        frontend.some((item) => item.isSelected) ||
+        backend.some((item) => item.isSelected) ||
+        other.some((item) => item.isSelected) ||
+        software.some((item) => item.isSelected) ||
+        web3.some((item) => item.isSelected)) && (
+        <>
+          <h3 className="preview-skills-heading">skills</h3>
+          <div className="preview-skills-container">
+            <SkillIconsList icons={core} />
+            <SkillIconsList icons={frontend} />
+            <SkillIconsList icons={backend} />
+            <SkillIconsList icons={other} />
+            <SkillIconsList icons={software} />
+            <SkillIconsList icons={web3} />
+          </div>
+        </>
+      )}
     </div>
   );
 }
