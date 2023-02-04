@@ -52,6 +52,9 @@ function App() {
   const [stackoverflowLink, setStackoverflowLink] = useState("");
   const [rssLink, setRssLink] = useState("");
 
+  // preview or markdown
+  const [isMarkdown, setIsMarkdown] = useState(false);
+
   const nextSection = () => {
     if (sectionIndex < sectionData.length - 1) {
       setSectionIndex((prev) => prev + 1);
@@ -62,6 +65,11 @@ function App() {
     if (sectionIndex > 0) {
       setSectionIndex((prev) => prev - 1);
     }
+  };
+
+  // toggle between preview/markdown
+  const togglePreview = () => {
+    setIsMarkdown((prev) => !prev);
   };
 
   return (
@@ -178,8 +186,17 @@ function App() {
           </div>
         </div>
         <div className="preview-container">
-          <Preview />
-          <Markdown />
+          <div className="preview-toggle-btn-container">
+            <UIButton
+              text={isMarkdown ? "switch to Preview" : "switch to Markdown"}
+              btnAction={togglePreview}
+              shouldVisible={true}
+            />
+          </div>
+
+          <div className="preview-component">
+            {isMarkdown ? <Markdown /> : <Preview />}
+          </div>
         </div>
       </div>
     </ProfileContext.Provider>

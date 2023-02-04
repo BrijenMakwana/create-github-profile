@@ -187,7 +187,7 @@ export default function Preview() {
         <SocialLink
           linkValue={hashnodeLink}
           iconName="hashnode"
-          link={`http://hashnode.com/${hashnodeLink}`}
+          link={`https://${hashnodeLink}.hashnode.dev`}
         />
         <SocialLink
           linkValue={mediumLink}
