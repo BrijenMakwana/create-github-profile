@@ -7,8 +7,8 @@ export default function Icon(props) {
       {`<a href="${link}" target="_blank" rel="noreferrer">
         <img
           src="${path}"
-          width="36"
-          height="36"
+          width="35"
+          height="35"
           alt="${iconName}"
         />
       </a>`}

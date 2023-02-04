@@ -54,119 +54,119 @@ export default function Socials() {
       <UILinkInput
         linkLabel="TWITTER"
         icon="twitter"
-        startLink="https://github.com"
+        startLink="https://twitter.com"
         linkValue={twitterLink}
         linkAction={setTwitterLink}
       />
       <UILinkInput
         linkLabel="HASHNODE "
         icon="hashnode"
-        startLink="https://github.com"
+        startLink="https:/"
         linkValue={hashnodeLink}
         linkAction={setHashnodeLink}
       />
       <UILinkInput
         linkLabel="MEDIUM "
         icon="medium-dark"
-        startLink="https://github.com"
+        startLink="http://medium.com"
         linkValue={mediumLink}
         linkAction={setMediumLink}
       />
       <UILinkInput
         linkLabel="DEV.TO "
         icon="devdotto-dark"
-        startLink="https://github.com"
+        startLink="https://dev.to.com"
         linkValue={devtoLink}
         linkAction={setDevtoLink}
       />
       <UILinkInput
         linkLabel="LINKEDIN "
         icon="linkedin"
-        startLink="https://github.com"
+        startLink="https://www.linkedin.com/in"
         linkValue={linkedinLink}
         linkAction={setLinkedinLink}
       />
       <UILinkInput
         linkLabel="POLYWORK "
         icon="polywork"
-        startLink="https://github.com"
+        startLink="https://polywork.com"
         linkValue={polyworkLink}
         linkAction={setPolyworkLink}
       />
       <UILinkInput
         linkLabel="TWITCH "
         icon="twitch"
-        startLink="https://github.com"
+        startLink="https://twitch.tv"
         linkValue={twitchLink}
         linkAction={setTwitchLink}
       />
       <UILinkInput
         linkLabel="YOUTUBE "
         icon="youtube"
-        startLink="https://github.com"
+        startLink="https://youtube.com/c"
         linkValue={youtubeLink}
         linkAction={setYoutubeLink}
       />
       <UILinkInput
         linkLabel="DISCORD "
         icon="discord"
-        startLink="https://github.com"
+        startLink="https://discord.com/users"
         linkValue={discordLink}
         linkAction={setDiscordLink}
       />
       <UILinkInput
         linkLabel="INSTAGRAM "
         icon="instagram"
-        startLink="https://github.com"
+        startLink="https://instagram.com"
         linkValue={instagramLink}
         linkAction={setInstagramLink}
       />
       <UILinkInput
         linkLabel="FACEBOOK "
         icon="facebook"
-        startLink="https://github.com"
+        startLink="https://facebook.com"
         linkValue={facebookLink}
         linkAction={setFacebookLink}
       />
       <UILinkInput
         linkLabel="DRIBBBLE "
         icon="dribbble"
-        startLink="https://github.com"
+        startLink="https://dribbble.com"
         linkValue={dribbleLink}
         linkAction={setDribbleLink}
       />
       <UILinkInput
         linkLabel="BEHANCE "
         icon="behance"
-        startLink="https://github.com"
+        startLink="https://behance.com"
         linkValue={behanceLink}
         linkAction={setBehanceLink}
       />
       <UILinkInput
         linkLabel="CODESANDBOX "
         icon="codesandbox-dark"
-        startLink="https://github.com"
+        startLink="https://codesandbox.io/u"
         linkValue={codesandboxLink}
         linkAction={setCodesandboxLink}
       />
       <UILinkInput
         linkLabel="CODEPEN "
         icon="codepen-dark"
-        startLink="https://github.com"
+        startLink="https://codepen.io"
         linkValue={codepenLink}
         linkAction={setCodepenLink}
       />
       <UILinkInput
         linkLabel="STACKOVERFLOW "
         icon="stackoverflow"
-        startLink="https://github.com"
+        startLink="https://www.stackoverflow.com/users"
         linkValue={stackoverflowLink}
         linkAction={setStackoverflowLink}
       />
       <UILinkInput
         linkLabel="RSS "
         icon="rss"
-        startLink="https://github.com"
+        startLink="https:/"
         linkValue={rssLink}
         linkAction={setRssLink}
       />
