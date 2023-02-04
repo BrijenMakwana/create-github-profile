@@ -1,5 +1,6 @@
 import { useState, createContext } from "react";
 import "./App.css";
+import Markdown from "./components/Markdown";
 import Preview from "./components/Preview";
 import SectionHeader from "./components/SectionHeader";
 import UIButton from "./components/UIButton";
@@ -178,6 +179,7 @@ function App() {
         </div>
         <div className="preview-container">
           <Preview />
+          <Markdown />
         </div>
       </div>
     </ProfileContext.Provider>
