@@ -78,7 +78,7 @@ export default function Preview() {
     <div className="preview-wrapper">
       {/* introduction */}
       {/* user name */}
-      {name && <h1 className="preview-name">Hi My name is {name}</h1>}
+      {name && <h1 className="preview-name">Hi 👋🏻 My name is {name}</h1>}
 
       {/* subtitle */}
       {subtitle && <h2 className="preview-subtitle">{subtitle}</h2>}
