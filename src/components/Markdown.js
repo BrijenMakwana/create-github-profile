@@ -7,6 +7,8 @@ import Li from "./markdown/Li";
 import Icon from "./markdown/Icon";
 import SocialIcon from "./markdown/SocialIcon";
 
+export let markdownRef = null;
+
 export default function Markdown() {
   const {
     name,
@@ -47,7 +49,8 @@ export default function Markdown() {
     rssLink,
     buyMeCoffeeLink,
   } = useContext(ProfileContext);
-  const markdownRef = useRef(null);
+
+  markdownRef = useRef(null);
   // console.log(markdownRef?.current?.innerHTML);
   return (
     <div className="markdown-wrapper" ref={markdownRef}>
@@ -81,36 +84,68 @@ export default function Markdown() {
         web3.some((item) => item.isSelected)) && (
         <Heading headingValue="Skills" type={3} />
       )}
-      {core
-        .filter((item) => item.isSelected)
-        .map((item) => (
-          <Icon iconName={item.name} link={item.link} path={item.path} />
-        ))}
-      {frontend
-        .filter((item) => item.isSelected)
-        .map((item) => (
-          <Icon iconName={item.name} link={item.link} path={item.path} />
-        ))}
-      {backend
-        .filter((item) => item.isSelected)
-        .map((item) => (
-          <Icon iconName={item.name} link={item.link} path={item.path} />
-        ))}
-      {other
-        .filter((item) => item.isSelected)
-        .map((item) => (
-          <Icon iconName={item.name} link={item.link} path={item.path} />
-        ))}
-      {software
-        .filter((item) => item.isSelected)
-        .map((item) => (
-          <Icon iconName={item.name} link={item.link} path={item.path} />
-        ))}
-      {web3
-        .filter((item) => item.isSelected)
-        .map((item) => (
-          <Icon iconName={item.name} link={item.link} path={item.path} />
-        ))}
+      <p>
+        {core
+          .filter((item) => item.isSelected)
+          .map((item) => (
+            <Icon
+              iconName={item.name}
+              link={item.link}
+              path={item.path}
+              key={item.iTag}
+            />
+          ))}
+        {frontend
+          .filter((item) => item.isSelected)
+          .map((item) => (
+            <Icon
+              iconName={item.name}
+              link={item.link}
+              path={item.path}
+              key={item.iTag}
+            />
+          ))}
+        {backend
+          .filter((item) => item.isSelected)
+          .map((item) => (
+            <Icon
+              iconName={item.name}
+              link={item.link}
+              path={item.path}
+              key={item.iTag}
+            />
+          ))}
+        {other
+          .filter((item) => item.isSelected)
+          .map((item) => (
+            <Icon
+              iconName={item.name}
+              link={item.link}
+              path={item.path}
+              key={item.iTag}
+            />
+          ))}
+        {software
+          .filter((item) => item.isSelected)
+          .map((item) => (
+            <Icon
+              iconName={item.name}
+              link={item.link}
+              path={item.path}
+              key={item.iTag}
+            />
+          ))}
+        {web3
+          .filter((item) => item.isSelected)
+          .map((item) => (
+            <Icon
+              iconName={item.name}
+              link={item.link}
+              path={item.path}
+              key={item.iTag}
+            />
+          ))}
+      </p>
       {(githubLink ||
         twitterLink ||
         hashnodeLink ||
@@ -129,96 +164,98 @@ export default function Markdown() {
         codepenLink ||
         stackoverflowLink ||
         rssLink) && <Heading headingValue="Socials" type={3} />}
-      <SocialIcon
-        linkValue={githubLink}
-        iconName="github-dark"
-        link={`https://github.com/${githubLink}`}
-      />
-      <SocialIcon
-        linkValue={twitterLink}
-        iconName="twitter"
-        link={`https://twitter.com/${twitterLink}`}
-      />
-      <SocialIcon
-        linkValue={hashnodeLink}
-        iconName="hashnode"
-        link={`https://${hashnodeLink}.hashnode.dev`}
-      />
-      <SocialIcon
-        linkValue={mediumLink}
-        iconName="medium-dark"
-        link={`http://medium.com/${mediumLink}`}
-      />
-      <SocialIcon
-        linkValue={devtoLink}
-        iconName="devdotto-dark"
-        link={`https://dev.to.com/${devtoLink}`}
-      />
-      <SocialIcon
-        linkValue={linkedinLink}
-        iconName="linkedin"
-        link={`https://www.linkedin.com/in/${linkedinLink}`}
-      />
-      <SocialIcon
-        linkValue={polyworkLink}
-        iconName="polywork"
-        link={`https://polywork.com/${polyworkLink}`}
-      />
-      <SocialIcon
-        linkValue={twitchLink}
-        iconName="twitch"
-        link={`https://twitch.tv/${twitchLink}`}
-      />
-      <SocialIcon
-        linkValue={youtubeLink}
-        iconName="youtube"
-        link={`https://www.youtube.com/c/${youtubeLink}`}
-      />
-      <SocialIcon
-        linkValue={discordLink}
-        iconName="discord"
-        link={`https://discord.com/users/${discordLink}`}
-      />
-      <SocialIcon
-        linkValue={instagramLink}
-        iconName="instagram"
-        link={`https://instagram.com/${instagramLink}`}
-      />
-      <SocialIcon
-        linkValue={facebookLink}
-        iconName="facebook"
-        link={`https://facebook.com/${facebookLink}`}
-      />
-      <SocialIcon
-        linkValue={dribbleLink}
-        iconName="dribbble"
-        link={`https://dribbble.com/${discordLink}`}
-      />
-      <SocialIcon
-        linkValue={behanceLink}
-        iconName="behance"
-        link={`https://behance.com/${behanceLink}`}
-      />
-      <SocialIcon
-        linkValue={codesandboxLink}
-        iconName="codesandbox-dark"
-        link={`https://codesandbox.io/u/${codesandboxLink}`}
-      />
-      <SocialIcon
-        linkValue={codepenLink}
-        iconName="codepen-dark"
-        link={`https://codepen.io/${codepenLink}`}
-      />
-      <SocialIcon
-        linkValue={stackoverflowLink}
-        iconName="stackoverflow"
-        link={`https://www.stackoverflow.com/users/${stackoverflowLink}`}
-      />
-      <SocialIcon
-        linkValue={rssLink}
-        iconName="rss"
-        link={`https://${rssLink}`}
-      />
+      <p>
+        <SocialIcon
+          linkValue={githubLink}
+          iconName="github-dark"
+          link={`https://github.com/${githubLink}`}
+        />
+        <SocialIcon
+          linkValue={twitterLink}
+          iconName="twitter"
+          link={`https://twitter.com/${twitterLink}`}
+        />
+        <SocialIcon
+          linkValue={hashnodeLink}
+          iconName="hashnode"
+          link={`https://${hashnodeLink}.hashnode.dev`}
+        />
+        <SocialIcon
+          linkValue={mediumLink}
+          iconName="medium-dark"
+          link={`http://medium.com/${mediumLink}`}
+        />
+        <SocialIcon
+          linkValue={devtoLink}
+          iconName="devdotto-dark"
+          link={`https://dev.to.com/${devtoLink}`}
+        />
+        <SocialIcon
+          linkValue={linkedinLink}
+          iconName="linkedin"
+          link={`https://www.linkedin.com/in/${linkedinLink}`}
+        />
+        <SocialIcon
+          linkValue={polyworkLink}
+          iconName="polywork"
+          link={`https://polywork.com/${polyworkLink}`}
+        />
+        <SocialIcon
+          linkValue={twitchLink}
+          iconName="twitch"
+          link={`https://twitch.tv/${twitchLink}`}
+        />
+        <SocialIcon
+          linkValue={youtubeLink}
+          iconName="youtube"
+          link={`https://www.youtube.com/c/${youtubeLink}`}
+        />
+        <SocialIcon
+          linkValue={discordLink}
+          iconName="discord"
+          link={`https://discord.com/users/${discordLink}`}
+        />
+        <SocialIcon
+          linkValue={instagramLink}
+          iconName="instagram"
+          link={`https://instagram.com/${instagramLink}`}
+        />
+        <SocialIcon
+          linkValue={facebookLink}
+          iconName="facebook"
+          link={`https://facebook.com/${facebookLink}`}
+        />
+        <SocialIcon
+          linkValue={dribbleLink}
+          iconName="dribbble"
+          link={`https://dribbble.com/${discordLink}`}
+        />
+        <SocialIcon
+          linkValue={behanceLink}
+          iconName="behance"
+          link={`https://behance.com/${behanceLink}`}
+        />
+        <SocialIcon
+          linkValue={codesandboxLink}
+          iconName="codesandbox-dark"
+          link={`https://codesandbox.io/u/${codesandboxLink}`}
+        />
+        <SocialIcon
+          linkValue={codepenLink}
+          iconName="codepen-dark"
+          link={`https://codepen.io/${codepenLink}`}
+        />
+        <SocialIcon
+          linkValue={stackoverflowLink}
+          iconName="stackoverflow"
+          link={`https://www.stackoverflow.com/users/${stackoverflowLink}`}
+        />
+        <SocialIcon
+          linkValue={rssLink}
+          iconName="rss"
+          link={`https://${rssLink}`}
+        />
+      </p>
       {buyMeCoffeeLink && <Heading headingValue="Support Me" type={3} />}
 
       {buyMeCoffeeLink && (
