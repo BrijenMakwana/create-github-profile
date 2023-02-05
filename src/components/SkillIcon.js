@@ -26,8 +26,13 @@ export default function SkillIcon(props) {
       onClick={toggleSelection}
       style={{
         backgroundColor: icon.isSelected
+          ? colorScheme["dark"].font
+          : "transparent",
+        borderColor: icon.isSelected
           ? colorScheme["dark"].primary
           : "transparent",
+        borderWidth: 3,
+        borderStyle: "solid",
       }}
     >
       <img src={icon.path} alt={icon.name} className="icon-image" />

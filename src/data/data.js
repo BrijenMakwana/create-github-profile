@@ -6,21 +6,22 @@ import Support from "../components/Support";
 const sectionData = [
   {
     heading: "Introduction",
-    description: "Introduce yourself. Tell visitors about you and who you are.",
+    description: "Describe yourself. Describe your identity to visitors.",
   },
   {
     heading: "Skills",
     description:
-      "Show off the languages, frameworks, software and tech that you use.",
+      "Display the programming languages, frameworks, tools, and technology you employ.",
   },
   {
     heading: "Socials",
-    description: "Connect with your visitors by adding links to your socials.",
+    description:
+      "Linking to your social media will help you connect with your visitors.",
   },
   {
     heading: "Support",
     description:
-      "Make it easy for people using your products to support you or give donations.",
+      "Make it simple for users who use your products to donate or support you.",
   },
 ];
 
