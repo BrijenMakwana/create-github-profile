@@ -6,6 +6,7 @@ import SectionHeader from "./components/SectionHeader";
 import UIButton from "./components/UIButton";
 import { sectionData, editingComponents, skillsIconData } from "./data/data";
 import { colorScheme } from "./color/color";
+import { markdownRef } from "./components/Markdown";
 
 export const ProfileContext = createContext(null);
 
@@ -74,6 +75,16 @@ function App() {
   // toggle between preview/markdown
   const togglePreview = () => {
     setIsMarkdown((prev) => !prev);
+  };
+
+  // copy markdown to clipboard
+  const copyToClipboard = () => {
+    console.log(markdownRef?.current?.innerHTML);
+
+    navigator.clipboard
+      .writeText(markdownRef?.current?.innerText)
+      .then(() => alert("Copied to clipboard!!"))
+      .catch((error) => alert(error));
   };
 
   return (
@@ -201,6 +212,13 @@ function App() {
               btnAction={togglePreview}
               shouldVisible={true}
             />
+            {isMarkdown && (
+              <UIButton
+                text="Copy"
+                btnAction={copyToClipboard}
+                shouldVisible={true}
+              />
+            )}
           </div>
 
           <div className="preview-component">

@@ -7,8 +7,6 @@ export default function Heading(props) {
 
   return (
     <>
-      <br />
-      <br />
       {[1, 2, 3, 4, 5, 6].map((item) => {
         if (item <= type) {
           return "#";
@@ -17,7 +15,6 @@ export default function Heading(props) {
         }
       })}{" "}
       {headingStart} {headingValue}
-      <br />
       <br />
     </>
   );
