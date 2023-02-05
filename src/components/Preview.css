@@ -37,7 +37,8 @@ a.preview-link {
 }
 
 .preview-skills-heading,
-.preview-socials-heading {
+.preview-socials-heading,
+.preview-support-heading {
   font-size: 25px;
   margin-top: 20px;
   color: #fff;
@@ -45,7 +46,8 @@ a.preview-link {
 }
 
 .preview-skills-container,
-.preview-socials-container {
+.preview-socials-container,
+.preview-support-container {
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -65,4 +67,12 @@ a.preview-link {
 
 .preview-social-link {
   margin: 20px 15px 0 0;
+}
+
+.preview-support-container a {
+  margin-top: 20px;
+}
+
+.buymecoffee-icon {
+  width: 170px;
 }

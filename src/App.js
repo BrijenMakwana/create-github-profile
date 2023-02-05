@@ -52,6 +52,9 @@ function App() {
   const [stackoverflowLink, setStackoverflowLink] = useState("");
   const [rssLink, setRssLink] = useState("");
 
+  // support
+  const [buyMeCoffeeLink, setBuyMeCoffeeLink] = useState("");
+
   // preview or markdown
   const [isMarkdown, setIsMarkdown] = useState(false);
 
@@ -147,6 +150,8 @@ function App() {
         setStackoverflowLink,
         rssLink,
         setRssLink,
+        buyMeCoffeeLink,
+        setBuyMeCoffeeLink,
       }}
     >
       <div className="App">

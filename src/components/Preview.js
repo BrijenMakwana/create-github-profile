@@ -73,6 +73,7 @@ export default function Preview() {
     codepenLink,
     stackoverflowLink,
     rssLink,
+    buyMeCoffeeLink,
   } = useContext(ProfileContext);
   return (
     <div className="preview-wrapper">
@@ -198,22 +199,22 @@ export default function Preview() {
           linkValue={devtoLink}
           iconName="devdotto-dark"
           link={`https://dev.to.com/${devtoLink}`}
-        />{" "}
+        />
         <SocialLink
           linkValue={linkedinLink}
           iconName="linkedin"
           link={`https://www.linkedin.com/in/${linkedinLink}`}
-        />{" "}
+        />
         <SocialLink
           linkValue={polyworkLink}
           iconName="polywork"
           link={`https://polywork.com/${polyworkLink}`}
-        />{" "}
+        />
         <SocialLink
           linkValue={twitchLink}
           iconName="twitch"
           link={`https://twitch.tv/${twitchLink}`}
-        />{" "}
+        />
         <SocialLink
           linkValue={youtubeLink}
           iconName="youtube"
@@ -265,6 +266,25 @@ export default function Preview() {
           link={`https://${rssLink}`}
         />
       </div>
+
+      {buyMeCoffeeLink && (
+        <>
+          <h3 className="preview-support-heading">Support</h3>
+
+          <div className="preview-support-container">
+            <a
+              href={`https://www.buymeacoffee.com/${buyMeCoffeeLink}`}
+              target="blank"
+            >
+              <img
+                src="https://cdn.buymeacoffee.com/buttons/v2/default-yellow.png"
+                alt={buyMeCoffeeLink}
+                className="buymecoffee-icon"
+              />
+            </a>
+          </div>
+        </>
+      )}
     </div>
   );
 }
