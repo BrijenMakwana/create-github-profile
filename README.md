@@ -1,5 +1,7 @@
 # GitHub Profile Generator
 
+This project is inspired by [profileme.dev](https://www.profileme.dev)
+
 ## Table of contents
 
 - [Overview](#overview)
