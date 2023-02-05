@@ -20,7 +20,6 @@
 
 .link-input-label {
   font-size: 14px;
-  color: #e94560;
   text-transform: uppercase;
   font-family: "Cousine", monospace;
   font-weight: 600;
@@ -31,13 +30,11 @@
   flex-direction: row;
   align-items: center;
   padding: 10px;
-  background-color: #161616;
   margin-top: 15px;
   border-radius: 5px;
 }
 
 .link-start {
-  color: #fff;
   font-size: 14px;
 }
 
@@ -45,7 +42,6 @@
   border: none;
   outline: none;
   background-color: transparent;
-  color: #fff;
   font-size: 14px;
   resize: none;
   width: 100%;

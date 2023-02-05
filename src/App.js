@@ -5,6 +5,7 @@ import Preview from "./components/Preview";
 import SectionHeader from "./components/SectionHeader";
 import UIButton from "./components/UIButton";
 import { sectionData, editingComponents, skillsIconData } from "./data/data";
+import { colorScheme } from "./color/color";
 
 export const ProfileContext = createContext(null);
 
@@ -190,7 +191,10 @@ function App() {
             </div>
           </div>
         </div>
-        <div className="preview-container">
+        <div
+          className="preview-container"
+          style={{ backgroundColor: colorScheme["dark"].secondary }}
+        >
           <div className="preview-toggle-btn-container">
             <UIButton
               text={isMarkdown ? "switch to Preview" : "switch to Markdown"}

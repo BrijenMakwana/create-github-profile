@@ -1,5 +1,4 @@
 .btn-container {
-  background-color: #e94560;
   width: fit-content;
   display: flex;
   flex-direction: column;
@@ -10,17 +9,8 @@
   cursor: pointer;
 }
 
-.btn-container:hover {
-  background-color: #fff;
-}
-
-.btn-container:hover .btn-text {
-  color: #000;
-}
-
 .btn-text {
   text-transform: capitalize;
   font-size: 13px;
   font-family: "Cousine", monospace;
-  color: #fff;
 }

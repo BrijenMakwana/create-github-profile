@@ -14,7 +14,12 @@ export default function UIButton(props) {
         backgroundColor: colorScheme["dark"].primary,
       }}
     >
-      <span className="btn-text">{text}</span>
+      <span
+        className="btn-text"
+        style={{ color: colorScheme["dark"].secondary }}
+      >
+        {text}
+      </span>
     </div>
   );
 }

@@ -10,10 +10,6 @@
   height: 100vh;
 }
 
-.preview-container {
-  background-color: #161616;
-}
-
 .editing-component {
   overflow-x: hidden;
   height: 80vh;

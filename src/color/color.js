@@ -1,8 +1,8 @@
 export const colorScheme = {
   dark: {
     background: "#252525",
-    primary: "#e94560",
-    secondary: "#161616",
+    primary: "#31E1F7",
+    secondary: "#1B1B1B",
     font: "#fff",
   },
   light: {},

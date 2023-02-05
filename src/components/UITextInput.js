@@ -28,6 +28,10 @@ export default function UITextInput(props) {
         <textarea
           placeholder={inputPlaceholder}
           className="text-input"
+          style={{
+            backgroundColor: colorScheme["dark"].secondary,
+            color: colorScheme["dark"].font,
+          }}
           rows={2}
           onChange={(e) => inputAction(e.target.value)}
           value={inputValue}
@@ -37,6 +41,10 @@ export default function UITextInput(props) {
           type="text"
           placeholder={inputPlaceholder}
           className="text-input"
+          style={{
+            backgroundColor: colorScheme["dark"].secondary,
+            color: colorScheme["dark"].font,
+          }}
           onChange={(e) => inputAction(e.target.value)}
           value={inputValue}
         />
@@ -45,6 +53,10 @@ export default function UITextInput(props) {
         <input
           type="text"
           className="text-input"
+          style={{
+            backgroundColor: colorScheme["dark"].secondary,
+            color: colorScheme["dark"].font,
+          }}
           placeholder="http://"
           onChange={(e) => linkAction(e.target.value)}
           value={linkValue}
