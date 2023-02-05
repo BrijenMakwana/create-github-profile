@@ -1,6 +1,6 @@
 # GitHub Profile Generator
 
-This project is inspired by [profileme.dev](https://www.profileme.dev)
+This project is inspired by [profileme.dev](https://www.profileme.dev), but the implementation is my own 😀
 
 ## Table of contents
 
