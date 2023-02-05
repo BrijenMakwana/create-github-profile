@@ -79,8 +79,6 @@ function App() {
 
   // copy markdown to clipboard
   const copyToClipboard = () => {
-    console.log(markdownRef?.current?.innerHTML);
-
     navigator.clipboard
       .writeText(markdownRef?.current?.innerText)
       .then(() => alert("Copied to clipboard!!"))

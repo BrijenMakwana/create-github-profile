@@ -51,7 +51,7 @@ export default function Markdown() {
   } = useContext(ProfileContext);
 
   markdownRef = useRef(null);
-  // console.log(markdownRef?.current?.innerHTML);
+
   return (
     <div className="markdown-wrapper" ref={markdownRef}>
       <Heading headingStart="Hi 👋🏻 My name is" headingValue={name} type={1} />
