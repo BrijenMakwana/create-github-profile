@@ -45,6 +45,7 @@ export default function Markdown() {
     codepenLink,
     stackoverflowLink,
     rssLink,
+    buyMeCoffeeLink,
   } = useContext(ProfileContext);
   const markdownRef = useRef(null);
   // console.log(markdownRef?.current?.innerHTML);
@@ -152,22 +153,22 @@ export default function Markdown() {
         linkValue={devtoLink}
         iconName="devdotto-dark"
         link={`https://dev.to.com/${devtoLink}`}
-      />{" "}
+      />
       <SocialIcon
         linkValue={linkedinLink}
         iconName="linkedin"
         link={`https://www.linkedin.com/in/${linkedinLink}`}
-      />{" "}
+      />
       <SocialIcon
         linkValue={polyworkLink}
         iconName="polywork"
         link={`https://polywork.com/${polyworkLink}`}
-      />{" "}
+      />
       <SocialIcon
         linkValue={twitchLink}
         iconName="twitch"
         link={`https://twitch.tv/${twitchLink}`}
-      />{" "}
+      />
       <SocialIcon
         linkValue={youtubeLink}
         iconName="youtube"
@@ -218,6 +219,21 @@ export default function Markdown() {
         iconName="rss"
         link={`https://${rssLink}`}
       />
+      {buyMeCoffeeLink && <Heading headingValue="Support Me" type={3} />}
+
+      {buyMeCoffeeLink && (
+        <>
+          {`
+          <a href="https://www.buymeacoffee.com/${buyMeCoffeeLink}" target="_blank" rel="noreferrer">
+            <img
+              src="https://cdn.buymeacoffee.com/buttons/v2/default-yellow.png"
+              width="170"
+              alt="${buyMeCoffeeLink}"
+            />
+          </a>
+          `}
+        </>
+      )}
     </div>
   );
 }

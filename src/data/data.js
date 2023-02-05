@@ -1,6 +1,7 @@
 import Introduction from "../components/Introduction";
 import Skills from "../components/Skills";
 import Socials from "../components/Socials";
+import Support from "../components/Support";
 
 const sectionData = [
   {
@@ -23,7 +24,12 @@ const sectionData = [
   },
 ];
 
-const editingComponents = [<Introduction />, <Skills />, <Socials />, ""];
+const editingComponents = [
+  <Introduction />,
+  <Skills />,
+  <Socials />,
+  <Support />,
+];
 
 // skills icons
 const skillsIconData = {
