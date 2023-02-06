@@ -38,3 +38,26 @@
   align-items: center;
   justify-content: space-between;
 }
+
+@media screen and (max-width: 500px) {
+  .App {
+    overflow: auto;
+    max-height: fit-content;
+    display: flex;
+    flex-direction: column;
+  }
+  .editing-container,
+  .preview-container {
+    width: 100vw;
+    height: fit-content;
+  }
+
+  .editing-component,
+  .preview-component {
+    height: fit-content;
+  }
+
+  .preview-component {
+    min-height: 500px;
+  }
+}
