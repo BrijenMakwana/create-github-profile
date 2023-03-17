@@ -18,6 +18,7 @@ This project is inspired by [profileme.dev](https://www.profileme.dev), but the 
 
 ## Screenshot
 
+![](./public/assets/screenshots/preview_0.png)
 ![](./public/assets/screenshots/preview_1.png)
 ![](./public/assets/screenshots/preview_2.png)
 ![](./public/assets/screenshots/preview_3.png)
